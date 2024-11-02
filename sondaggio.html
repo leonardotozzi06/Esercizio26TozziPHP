@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondaggio</title>
+</head>
+<body>
+    <h1>Sondaggio della Scuola</h1>
+    <form action="risultati.php" method="GET">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+
+        <label for="data_nascita">Data di nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <label for="orario_arrivo">Orario di arrivo a casa nel giorno più lungo:</label>
+        <input type="time" id="orario_arrivo" name="orario_arrivo" required><br><br>
+
+        <p>Come vieni a scuola?</p>
+        <input type="radio" id="piedi" name="mezzo" value="a piedi" required>
+        <label for="piedi">A piedi</label><br>
+        
+        <input type="radio" id="mezzi" name="mezzo" value="mezzi pubblici">
+        <label for="mezzi">Mezzi pubblici</label><br>
+        
+        <input type="radio" id="auto" name="mezzo" value="auto">
+        <label for="auto">Auto</label><br><br>
+
+        <p>Corsi pomeridiani seguiti:</p>
+        <input type="checkbox" id="inglese" name="corsi[]" value="corso di inglese">
+        <label for="inglese">Corso di inglese</label><br>
+
+        <input type="checkbox" id="teatro" name="corsi[]" value="corso di teatro">
+        <label for="teatro">Corso di teatro</label><br>
+
+        <input type="checkbox" id="sport" name="corsi[]" value="attività sportive">
+        <label for="sport">Attività sportive</label><br><br>
+
+        <button type="submit">Invia</button>
+    </form>
+</body>
+</html>
